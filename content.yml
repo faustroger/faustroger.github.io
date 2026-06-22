@@ -28,7 +28,7 @@ profile:
   name: Roger Faust
   title: Assistant Professor of Environmental Studies
   institution: Carleton College
-  photo: assets/RogerFaust_Headshot.jpeg          # drop a square photo here, or leave as-is
+  photo: RogerFaust_Headshot.jpeg          # drop a square photo here, or leave as-is
   tagline: >
     Conservation scientist working at the intersection of community-based
     participatory research and Indigenous engagement in natural resource
