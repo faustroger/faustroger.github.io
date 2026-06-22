@@ -97,6 +97,11 @@ teaching:
     management, learn qualitative and community-based research methods, and
     examine Indigenous relationships with land through Native scholarship and
     critical discussion.
+    
+      photos:
+    - { src: "Class_Prairie.jpg", caption: "Learning about fire ecology and prairie management through a prescribed burn at the Carleton Arboretum." }
+    - { src: "Fire_Class.png", caption: "Learning beyond the classroom: students examining local approaches to caring for and sustaining natural environments at Prairie Creek Wildlife Management Area." }
+    
   courses:
     - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Explores the legal, cultural, and environmental foundations of Tribal
         and Indigenous environmental stewardship and natural resource
