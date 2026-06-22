@@ -91,11 +91,12 @@ research:
 # -----------------------------------------------------------------------------
 teaching:
   intro: >
-    I teach courses in Environmental Studies on Tribal sovereignty and sustainability, community
-    engagement and qualitative methods, and Indigenous relationships with land
-    and environmental change, connecting conservation science with the
-    knowledge and values of the communities most affected by environmental
-    decisions.
+    My teaching centers Indigenous environmental stewardship, Tribal
+    sovereignty, and community-engaged research. Across my courses, students
+    engage with the legal and cultural foundations of Tribal natural resource
+    management, learn qualitative and community-based research methods, and
+    examine Indigenous relationships with land through Native scholarship and
+    critical discussion.
   courses:
     - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Explores the legal, cultural, and environmental foundations of Tribal
         and Indigenous environmental stewardship and natural resource
