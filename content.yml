@@ -150,11 +150,11 @@ outreach:
     contributions to regional CWD response efforts.
 
 # -----------------------------------------------------------------------------
-# FIELD NOTES (intro text only; individual notes are ENTRIES below)
+# FIELD NOTES (intro text only; individual notes are ENTRIES below) (CURRENTLY HIDING)
 # -----------------------------------------------------------------------------
-fieldnotes:
-  intro: >
-    Short, informal notes and photos from the field and from collaborative work.
+#fieldnotes:
+#  intro: >
+#    Short, informal notes and photos from the field and from collaborative work.
 
 # -----------------------------------------------------------------------------
 # CONTACT
