@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Academic Site//Update Reminder//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:academic-site-update-5week@rogerfaust
+DTSTAMP:20260614T120000Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260623
+RRULE:FREQ=WEEKLY;INTERVAL=5
+SUMMARY:Update academic website + CV (15 min)
+DESCRIPTION:Quick maintenance pass on your site (content.yml on GitHub).\n\nCHECKLIST:\n1. New publications / preprints accepted? Add a 'publication' entry.\n2. Talks or invited seminars given? Add a 'talk' entry.\n3. Outreach / community / Tribal partnership events? Add an 'outreach' entry.\n4. A field photo or short note to share? Add a 'fieldnote' entry.\n5. Anything changed in About / Teaching / Research? Edit those blocks.\n6. Re-upload your CV PDF to /assets if it changed.\n7. Commit. Live in ~1 minute. Done.\n\nHow: GitHub -> your repo -> content.yml -> pencil icon -> edit -> Commit changes.
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:Update academic website + CV
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roger Faust — Environmental Studies, Carleton College</title>
+<meta name="description" content="Roger Faust, Assistant Professor of Environmental Studies at Carleton College. Conservation science, community-based participatory research, and Indigenous engagement in natural resource management.">
+
+<!-- ============================================================
+     ONE-FILE ACADEMIC SITE
+     - All of your content lives in  content.yml  (edit that file).
+     - This file (index.html) is the engine; you rarely touch it.
+     - Loads js-yaml from a CDN to read content.yml in the browser.
+     ============================================================ -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+
+<style>
+:root{
+  --bg:#ffffff;
+  --surface:#f7f7f5;
+  --text:#1c1c1a;
+  --muted:#6b6b66;
+  --line:#e6e6e1;
+  --accent:#2f5d50;        /* deep conservation green */
+  --accent-soft:#e7efeb;
+  --max:880px;
+  --radius:10px;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --serif: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16181a; --surface:#1e2123; --text:#ececea; --muted:#a3a39d;
+    --line:#2c2f31; --accent:#7fb6a4; --accent-soft:#21302c;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--font); line-height:1.6; font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%}
+
+/* ---------- Header / nav ---------- */
+header.site{
+  border-bottom:1px solid var(--line); position:sticky; top:0;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:saturate(120%) blur(8px); z-index:10;
+}
+.nav-inner{
+  max-width:var(--max); margin:0 auto; padding:.7rem 1.1rem;
+  display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+}
+.brand{font-weight:700; font-size:1.02rem; margin-right:auto}
+.brand small{display:block; font-weight:400; color:var(--muted); font-size:.78rem}
+nav a{
+  color:var(--muted); font-size:.92rem; padding:.25rem .15rem; border-bottom:2px solid transparent;
+}
+nav a.active{color:var(--text); border-bottom-color:var(--accent)}
+nav a:hover{color:var(--text); text-decoration:none}
+
+main{max-width:var(--max); margin:0 auto; padding:2.2rem 1.1rem 4rem}
+.view{display:none; animation:fade .25s ease}
+.view.active{display:block}
+@keyframes fade{from{opacity:0; transform:translateY(4px)}to{opacity:1; transform:none}}
+
+h1{font-size:2rem; line-height:1.15; margin:.2rem 0 .4rem}
+h2{font-size:1.35rem; margin:2.2rem 0 .8rem; padding-bottom:.3rem; border-bottom:1px solid var(--line)}
+h3{font-size:1.05rem; margin:1.4rem 0 .3rem}
+p{margin:.6rem 0}
+.lead{font-size:1.12rem; color:var(--text)}
+.muted{color:var(--muted)}
+
+/* ---------- Hero ---------- */
+.hero{display:flex; gap:1.6rem; align-items:flex-start; flex-wrap:wrap}
+.hero .photo{
+  width:150px; height:150px; border-radius:14px; object-fit:cover;
+  background:var(--surface); border:1px solid var(--line); flex:0 0 auto;
+}
+.hero .meta{flex:1; min-width:240px}
+.title-line{color:var(--accent); font-weight:600}
+.inst{color:var(--muted)}
+.social{margin-top:.7rem; display:flex; gap:.6rem; flex-wrap:wrap}
+.social a{
+  font-size:.85rem; border:1px solid var(--line); padding:.28rem .6rem;
+  border-radius:999px; color:var(--text);
+}
+.social a:hover{border-color:var(--accent); text-decoration:none}
+
+/* ---------- Cards / entries ---------- */
+.entry{padding:1rem 0; border-bottom:1px solid var(--line)}
+.entry:last-child{border-bottom:none}
+.entry .date{font-size:.8rem; color:var(--muted); letter-spacing:.02em; text-transform:uppercase}
+.entry .etitle{font-weight:650; margin:.15rem 0}
+.entry .desc{margin:.2rem 0; color:var(--text)}
+.badge{
+  display:inline-block; font-size:.72rem; background:var(--accent-soft); color:var(--accent);
+  padding:.12rem .5rem; border-radius:999px; margin-left:.4rem; vertical-align:middle; font-weight:600;
+}
+.tags{margin-top:.35rem}
+.tag{font-size:.74rem; color:var(--muted); margin-right:.5rem}
+.tag::before{content:"#"}
+.links a{font-size:.86rem; margin-right:.8rem}
+.year-head{font-family:var(--serif); font-size:1.1rem; color:var(--muted); margin:1.6rem 0 .2rem}
+
+.areas{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1rem; margin-top:1rem}
+.area{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1rem 1.1rem}
+.area h3{margin:.1rem 0 .3rem}
+
+.course{padding:.8rem 0; border-bottom:1px solid var(--line)}
+.course:last-child{border-bottom:none}
+.course .term{font-size:.8rem; color:var(--muted)}
+.course .cname{font-weight:600}
+
+.fieldnote{padding:1.2rem 0; border-bottom:1px solid var(--line)}
+.fieldnote img{border-radius:var(--radius); margin:.6rem 0; border:1px solid var(--line)}
+
+.contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem}
+.contact-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1rem 1.1rem}
+
+footer{max-width:var(--max); margin:0 auto; padding:1.6rem 1.1rem; color:var(--muted); font-size:.82rem; border-top:1px solid var(--line)}
+.empty{color:var(--muted); font-style:italic; padding:1rem 0}
+.err{background:#fdecea; color:#8a1c12; border:1px solid #f5c6c1; padding:1rem; border-radius:var(--radius)}
+@media (prefers-color-scheme: dark){.err{background:#3a1c19; color:#f6c9c4; border-color:#5a2a25}}
+.skip{position:absolute; left:-999px}
+.skip:focus{left:1rem; top:.5rem; background:var(--bg); padding:.4rem .7rem; border:1px solid var(--accent); border-radius:6px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="nav-inner">
+    <div class="brand" id="brand">Loading…</div>
+    <nav id="nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#outreach">Outreach</a>
+      <a href="#fieldnotes">Field Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="view-home" class="view"></section>
+  <section id="view-about" class="view"></section>
+  <section id="view-research" class="view"></section>
+  <section id="view-publications" class="view"></section>
+  <section id="view-teaching" class="view"></section>
+  <section id="view-outreach" class="view"></section>
+  <section id="view-fieldnotes" class="view"></section>
+  <section id="view-contact" class="view"></section>
+</main>
+
+<footer id="footer"></footer>
+
+<script>
+/* =====================================================================
+   SITE ENGINE  —  you should not need to edit anything below.
+   It reads content.yml, then renders each section. To change content,
+   edit content.yml only.
+   ===================================================================== */
+
+const VIEWS = ["home","about","research","publications","teaching","outreach","fieldnotes","contact"];
+let DATA = null;
+
+/* ---------- small helpers ---------- */
+const $ = (id) => document.getElementById(id);
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function nl2br(s){ return esc(s).replace(/\n/g,"<br>"); }
+function fmtDate(d){
+  if(!d) return "";
+  const dt = new Date(d + (String(d).length<=10 ? "T00:00:00" : ""));
+  if(isNaN(dt)) return esc(d);
+  return dt.toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"});
+}
+function yearOf(d){ const dt=new Date(d); return isNaN(dt)? (String(d).match(/\d{4}/)||["—"])[0] : dt.getFullYear(); }
+function entries(type){
+  return (DATA.entries||[])
+    .filter(e => (e.type||"").toLowerCase() === type)
+    .sort((a,b)=> new Date(b.date) - new Date(a.date));
+}
+function linksHTML(links){
+  if(!links || !links.length) return "";
+  return '<div class="links">' + links.map(l=>{
+    const url = typeof l==="string"? l : l.url;
+    const text = typeof l==="string"? l : (l.text||l.url);
+    return url? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)} ↗</a>` : "";
+  }).join("") + '</div>';
+}
+function tagsHTML(tags){
+  if(!tags || !tags.length) return "";
+  return '<div class="tags">'+tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")+'</div>';
+}
+function entryHTML(e, showBadge){
+  return `<div class="entry">
+    <div class="date">${fmtDate(e.date)}${showBadge && e.type? `<span class="badge">${esc(e.type)}</span>`:""}</div>
+    <div class="etitle">${esc(e.title)}</div>
+    ${e.venue? `<div class="muted">${esc(e.venue)}</div>`:""}
+    ${e.description? `<div class="desc">${nl2br(e.description)}</div>`:""}
+    ${linksHTML(e.links)}
+    ${tagsHTML(e.tags)}
+  </div>`;
+}
+
+/* ---------- renderers ---------- */
+function renderHome(){
+  const p = DATA.profile||{};
+  const social = (p.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+  const recent = (DATA.entries||[]).slice().sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,5);
+  $("view-home").innerHTML = `
+    <div class="hero">
+      ${p.photo? `<img class="photo" src="${esc(p.photo)}" alt="${esc(p.name)}">` : `<div class="photo"></div>`}
+      <div class="meta">
+        <h1>${esc(p.name)}</h1>
+        <div class="title-line">${esc(p.title)}</div>
+        <div class="inst">${esc(p.institution)}</div>
+        ${p.tagline? `<p class="lead">${esc(p.tagline)}</p>`:""}
+        <div class="social">${social}</div>
+      </div>
+    </div>
+    <h2>Recent updates</h2>
+    ${recent.length? recent.map(e=>entryHTML(e,true)).join("") : `<div class="empty">No updates yet — add entries in content.yml.</div>`}
+  `;
+}
+function renderAbout(){
+  const a = DATA.about||{};
+  $("view-about").innerHTML = `
+    <h1>About</h1>
+    ${a.bio? `<div class="lead">${nl2br(a.bio)}</div>`:""}
+    ${a.education && a.education.length? `<h2>Education</h2>` + a.education.map(ed=>
+      `<div class="entry"><div class="etitle">${esc(ed.degree)}</div><div class="muted">${esc(ed.institution)}${ed.year?` · ${esc(ed.year)}`:""}</div>${ed.detail?`<div class="desc">${esc(ed.detail)}</div>`:""}</div>`
+    ).join("") : ""}
+    ${a.positions && a.positions.length? `<h2>Appointments</h2>` + a.positions.map(po=>
+      `<div class="entry"><div class="etitle">${esc(po.role)}</div><div class="muted">${esc(po.institution)}${po.years?` · ${esc(po.years)}`:""}</div></div>`
+    ).join("") : ""}
+  `;
+}
+function renderResearch(){
+  const r = DATA.research||{};
+  const areas = (r.areas||[]).map(a=>`<div class="area"><h3>${esc(a.title)}</h3><p>${nl2br(a.description)}</p></div>`).join("");
+  $("view-research").innerHTML = `
+    <h1>Research</h1>
+    ${r.intro? `<p class="lead">${nl2br(r.intro)}</p>`:""}
+    ${areas? `<div class="areas">${areas}</div>`:""}
+    ${r.statement? `<h2>Approach</h2><p>${nl2br(r.statement)}</p>`:""}
+  `;
+}
+function renderPublications(){
+  const pubs = entries("publication");
+  let html = `<h1>Publications</h1>`;
+  if(DATA.research && DATA.research.publications_note) html += `<p class="muted">${nl2br(DATA.research.publications_note)}</p>`;
+  if(!pubs.length){ html += `<div class="empty">No publications listed yet.</div>`; }
+  else{
+    let lastYear = null;
+    pubs.forEach(e=>{
+      const y = yearOf(e.date);
+      if(y!==lastYear){ html += `<div class="year-head">${esc(y)}</div>`; lastYear=y; }
+      html += `<div class="entry">
+        <div class="etitle">${esc(e.title)}</div>
+        ${e.venue? `<div class="muted">${esc(e.venue)}</div>`:""}
+        ${e.description? `<div class="desc">${nl2br(e.description)}</div>`:""}
+        ${linksHTML(e.links)}
+        ${tagsHTML(e.tags)}
+      </div>`;
+    });
+  }
+  $("view-publications").innerHTML = html;
+}
+function renderTeaching(){
+  const t = DATA.teaching||{};
+  const courses = (t.courses||[]).map(c=>`
+    <div class="course">
+      <div class="term">${esc(c.term||"")}${c.code?` · ${esc(c.code)}`:""}</div>
+      <div class="cname">${esc(c.title)}</div>
+      ${c.description? `<div class="desc">${nl2br(c.description)}</div>`:""}
+    </div>`).join("");
+  $("view-teaching").innerHTML = `
+    <h1>Teaching</h1>
+    ${t.intro? `<p class="lead">${nl2br(t.intro)}</p>`:""}
+    ${courses || `<div class="empty">No courses listed yet.</div>`}
+  `;
+}
+function renderOutreach(){
+  const list = entries("outreach");
+  const talks = entries("talk");
+  let html = `<h1>Outreach &amp; Engagement</h1>`;
+  if(DATA.outreach && DATA.outreach.intro) html += `<p class="lead">${nl2br(DATA.outreach.intro)}</p>`;
+  html += `<h2>Community engagement &amp; outreach</h2>`;
+  html += list.length? list.map(e=>entryHTML(e,false)).join("") : `<div class="empty">No outreach events listed yet.</div>`;
+  html += `<h2>Talks &amp; presentations</h2>`;
+  html += talks.length? talks.map(e=>entryHTML(e,false)).join("") : `<div class="empty">No talks listed yet.</div>`;
+  $("view-outreach").innerHTML = html;
+}
+function renderFieldnotes(){
+  const notes = entries("fieldnote");
+  let html = `<h1>Photos &amp; Field Notes</h1>`;
+  if(DATA.fieldnotes && DATA.fieldnotes.intro) html += `<p class="lead">${nl2br(DATA.fieldnotes.intro)}</p>`;
+  if(!notes.length){ html += `<div class="empty">No field notes yet.</div>`; }
+  else{
+    html += notes.map(e=>`
+      <div class="fieldnote">
+        <div class="date">${fmtDate(e.date)}</div>
+        <div class="etitle">${esc(e.title)}</div>
+        ${e.image? `<img src="${esc(e.image)}" alt="${esc(e.title)}">`:""}
+        ${e.description? `<div class="desc">${nl2br(e.description)}</div>`:""}
+        ${linksHTML(e.links)}
+        ${tagsHTML(e.tags)}
+      </div>`).join("");
+  }
+  $("view-fieldnotes").innerHTML = html;
+}
+function renderContact(){
+  const c = DATA.contact||{};
+  const cards = [];
+  if(c.email) cards.push(`<div class="contact-card"><h3>Email</h3><p><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></p></div>`);
+  if(c.office) cards.push(`<div class="contact-card"><h3>Office</h3><p>${nl2br(c.office)}</p></div>`);
+  if(c.mailing) cards.push(`<div class="contact-card"><h3>Mailing address</h3><p>${nl2br(c.mailing)}</p></div>`);
+  const social = (c.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+  $("view-contact").innerHTML = `
+    <h1>Contact</h1>
+    ${c.intro? `<p class="lead">${nl2br(c.intro)}</p>`:""}
+    <div class="contact-grid">${cards.join("")}</div>
+    ${social? `<div class="social" style="margin-top:1.2rem">${social}</div>`:""}
+  `;
+}
+
+/* ---------- routing ---------- */
+function route(){
+  let h = (location.hash||"#home").replace("#","");
+  if(!VIEWS.includes(h)) h = "home";
+  VIEWS.forEach(v => $("view-"+v).classList.toggle("active", v===h));
+  document.querySelectorAll("#nav a").forEach(a=>{
+    a.classList.toggle("active", a.getAttribute("href")==="#"+h);
+  });
+  window.scrollTo({top:0,behavior:"instant" in window? "instant":"auto"});
+}
+
+function renderAll(){
+  const p = DATA.profile||{};
+  document.title = `${p.name||"Academic"} — ${p.institution||""}`.trim();
+  $("brand").innerHTML = `${esc(p.name||"")}<small>${esc(p.title||"")}</small>`;
+  renderHome(); renderAbout(); renderResearch(); renderPublications();
+  renderTeaching(); renderOutreach(); renderFieldnotes(); renderContact();
+  const y = new Date().getFullYear();
+  $("footer").innerHTML = `© ${y} ${esc(p.name||"")}. Last built from <code>content.yml</code>. Built to be edited, not coded.`;
+  route();
+}
+
+/* ---------- boot ---------- */
+window.addEventListener("hashchange", route);
+fetch("content.yml?cb=" + Date.now())
+  .then(r=>{ if(!r.ok) throw new Error("content.yml not found ("+r.status+")"); return r.text(); })
+  .then(txt=>{ DATA = jsyaml.load(txt) || {}; renderAll(); })
+  .catch(err=>{
+    $("view-home").classList.add("active");
+    $("view-home").innerHTML = `<div class="err"><strong>Could not load content.yml.</strong><br>
+      ${esc(err.message)}<br><br>
+      If you opened this file directly (file://), browsers block reading content.yml.
+      Run a local server (<code>python3 -m http.server</code>) or just push to GitHub Pages,
+      where it works automatically.</div>`;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+# =============================================================================
+#  content.yml  —  THE ONLY FILE YOU EDIT
+# =============================================================================
+#  This single file powers the whole website. To update your site:
+#    1. Edit this file (on GitHub: click the pencil icon ✏️).
+#    2. Save / commit.
+#    3. Your live site updates in ~1 minute. That's it.
+#
+#  TWO KINDS OF CONTENT:
+#    A) PROFILE BLOCKS (about you, slow-changing): profile, about, research,
+#       teaching, outreach, fieldnotes, contact. Edit occasionally.
+#    B) ENTRIES (your living CV stream): one growing list at the bottom.
+#       Every publication, talk, outreach event, and field note is ONE entry.
+#       To add something new, copy a template block and fill it in. Done.
+#
+#  YAML rules that keep you out of trouble:
+#    - Indent with 2 SPACES (never tabs).
+#    - A list item starts with "- ".
+#    - If your text has a colon ":" in it, wrap the whole value in quotes,
+#      e.g.  title: "CWD: a regional update"
+#    - Long text: use  |  then indent the lines (see bio below).
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PROFILE  (the header / home hero)
+# -----------------------------------------------------------------------------
+profile:
+  name: Roger Faust
+  title: Assistant Professor of Environmental Studies
+  institution: Carleton College
+  photo: assets/profile.jpg          # drop a square photo here, or leave as-is
+  tagline: >
+    Conservation scientist working at the intersection of community-based
+    participatory research and Indigenous engagement in natural resource
+    management, with a focus on chronic wasting disease in the upper Midwest.
+  links:
+    - { label: "Email",          url: "mailto:rfaust@carleton.edu" }
+    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
+    - { label: "ORCID",          url: "https://orcid.org/0000-0000-0000-0000" }
+    - { label: "CV (PDF)",       url: "assets/Faust_CV.pdf" }
+
+# -----------------------------------------------------------------------------
+# ABOUT
+# -----------------------------------------------------------------------------
+about:
+  bio: |
+    I am an Assistant Professor of Environmental Studies at Carleton College.
+    My research bridges conservation science and the communities most affected
+    by environmental change. I work alongside Tribal nations, agency partners,
+    and rural communities in the upper Midwest to study chronic wasting disease
+    (CWD) in cervid populations and to build durable, locally grounded responses
+    to it.
+
+    I am committed to community-based participatory research (CBPR): designing
+    studies with — not merely about — the people and nations who hold a stake in
+    the outcomes. I teach courses in conservation science, environmental justice,
+    and field methods.
+  education:
+    - { degree: "Ph.D., Environmental Science / Wildlife Ecology", institution: "University Name", year: "2019", detail: "Dissertation on disease ecology in cervid populations." }
+    - { degree: "M.S., Natural Resources", institution: "University Name", year: "2014" }
+    - { degree: "B.A., Biology", institution: "College Name", year: "2011" }
+  positions:
+    - { role: "Assistant Professor of Environmental Studies", institution: "Carleton College", years: "2022–present" }
+    - { role: "Postdoctoral Research Associate", institution: "University Name", years: "2019–2022" }
+
+# -----------------------------------------------------------------------------
+# RESEARCH
+# -----------------------------------------------------------------------------
+research:
+  intro: >
+    My work asks how conservation science can be done in genuine partnership with
+    communities, and how that partnership produces better science and better
+    outcomes for wildlife and people alike.
+  areas:
+    - title: Chronic wasting disease (CWD)
+      description: >
+        Disease ecology, surveillance, and management of CWD in deer and elk
+        across the upper Midwest, with attention to spatial spread and the
+        social dimensions of response.
+    - title: Community-based participatory research
+      description: >
+        Co-designing research questions, methods, and data governance with the
+        communities affected, so that findings are trusted and actionable.
+    - title: Indigenous engagement in natural resource management
+      description: >
+        Centering Tribal sovereignty and Indigenous knowledge in conservation
+        decision-making, co-management, and wildlife health.
+  statement: >
+    Across these areas I treat communities as partners and co-authors. Methods
+    range from field surveillance and spatial modeling to interviews, workshops,
+    and collaborative data-governance agreements.
+  publications_note: >
+    * denotes student co-author. For the complete and most current list, see my
+    Google Scholar profile or CV.
+
+# -----------------------------------------------------------------------------
+# TEACHING
+# -----------------------------------------------------------------------------
+teaching:
+  intro: >
+    I teach across conservation science, environmental justice, and field
+    methods, emphasizing hands-on fieldwork and community-engaged projects.
+  courses:
+    - { term: "Fall 2026",   code: "ENTS 215", title: "Conservation Science",            description: "Principles of conservation biology with regional case studies." }
+    - { term: "Winter 2026", code: "ENTS 268", title: "Community-Based Environmental Research", description: "Theory and practice of participatory and Indigenous-led research." }
+    - { term: "Spring 2026", code: "ENTS 340", title: "Field Methods in Wildlife Ecology", description: "Survey design, sampling, and disease surveillance in the field." }
+
+# -----------------------------------------------------------------------------
+# OUTREACH (intro text only; individual events are ENTRIES below)
+# -----------------------------------------------------------------------------
+outreach:
+  intro: >
+    I work to make conservation science useful beyond the academy — through
+    partnerships with Tribal nations and agencies, public talks, and
+    contributions to regional CWD response efforts.
+
+# -----------------------------------------------------------------------------
+# FIELD NOTES (intro text only; individual notes are ENTRIES below)
+# -----------------------------------------------------------------------------
+fieldnotes:
+  intro: >
+    Short, informal notes and photos from the field and from collaborative work.
+
+# -----------------------------------------------------------------------------
+# CONTACT
+# -----------------------------------------------------------------------------
+contact:
+  intro: >
+    I welcome inquiries from prospective collaborators, community partners, and
+    students.
+  email: rfaust@carleton.edu
+  office: |
+    Department of Environmental Studies
+    Carleton College
+    Northfield, MN
+  links:
+    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
+    - { label: "ORCID",          url: "https://orcid.org/0000-0000-0000-0000" }
+
+
+# =============================================================================
+#  ENTRIES  —  YOUR LIVING CV STREAM
+# =============================================================================
+#  This is where 90% of your updates happen. Each entry is one item.
+#  REQUIRED:  date  +  type  +  title
+#  type must be ONE of:  publication | talk | outreach | fieldnote
+#       publication -> Publications page (auto-grouped by year)
+#       talk        -> Outreach page, "Talks & presentations"
+#       outreach    -> Outreach page, "Community engagement"
+#       fieldnote   -> Photos & Field Notes page (supports an image)
+#  OPTIONAL:  venue, description, links, tags, image (fieldnotes only)
+#
+#  ----  COPY ONE OF THESE TEMPLATES, paste at the top of the list,
+#  ----  and fill it in. Newest can go anywhere; the site sorts by date.
+#
+#  - date: 2026-06-01
+#    type: publication
+#    title: "Article title here"
+#    venue: "Journal Name, vol(issue), pages"
+#    description: "One line on what it found (optional)."
+#    links:
+#      - { text: "DOI", url: "https://doi.org/..." }
+#    tags: [CWD, surveillance]
+#
+#  - date: 2026-06-01
+#    type: talk
+#    title: "Talk title"
+#    venue: "Conference / host, City"
+#    links: [ { text: "Slides", url: "..." } ]
+#    tags: [invited]
+#
+#  - date: 2026-06-01
+#    type: outreach
+#    title: "Workshop / event name"
+#    venue: "Partner organization, location"
+#    description: "What you did and with whom."
+#    tags: [Tribal partnership]
+#
+#  - date: 2026-06-01
+#    type: fieldnote
+#    title: "Field note title"
+#    image: assets/fieldnote-1.jpg
+#    description: "A few sentences."
+#    tags: [fieldwork]
+# =============================================================================
+
+entries:
+
+  # ---- EXAMPLE PUBLICATIONS ----
+  - date: 2026-03-15
+    type: publication
+    title: "Spatial drivers of chronic wasting disease spread in upper-Midwest white-tailed deer"
+    venue: "Journal of Wildlife Diseases, 62(2), 145–161"
+    description: "Combined surveillance data and spatial modeling to identify landscape predictors of CWD emergence."
+    links:
+      - { text: "DOI", url: "https://doi.org/10.0000/example" }
+    tags: [CWD, spatial-ecology, surveillance]
+
+  - date: 2025-09-02
+    type: publication
+    title: "Co-governing wildlife health: a participatory framework for CWD response with Tribal nations"
+    venue: "Conservation Biology, 39(4), e14123"
+    description: "Presents a CBPR framework co-developed with Tribal partners for data governance and decision-making."
+    links:
+      - { text: "DOI", url: "https://doi.org/10.0000/example2" }
+      - { text: "PDF", url: "assets/faust-2025-cogoverning.pdf" }
+    tags: [CBPR, Indigenous-engagement, co-management]
+
+  - date: 2024-06-20
+    type: publication
+    title: "What rural communities want from disease surveillance: lessons from the upper Midwest"
+    venue: "Society & Natural Resources, 37(6), 800–818"
+    tags: [community-engagement, surveillance]
+
+  # ---- EXAMPLE TALKS ----
+  - date: 2026-04-10
+    type: talk
+    title: "Community-engaged approaches to CWD management"
+    venue: "Invited seminar, Midwest Wildlife Health Symposium, Madison, WI"
+    links: [ { text: "Slides", url: "assets/talk-2026-cwd.pdf" } ]
+    tags: [invited, CWD]
+
+  - date: 2025-11-05
+    type: talk
+    title: "Centering sovereignty in wildlife disease research"
+    venue: "The Wildlife Society Annual Conference"
+    tags: [Indigenous-engagement]
+
+  # ---- EXAMPLE OUTREACH ----
+  - date: 2026-05-18
+    type: outreach
+    title: "CWD sampling workshop with regional Tribal natural-resource staff"
+    venue: "Upper Midwest"
+    description: "Co-led a hands-on workshop on field sampling protocols and data sharing."
+    tags: [Tribal-partnership, training]
+
+  - date: 2026-02-12
+    type: outreach
+    title: "Public forum: living with CWD in deer country"
+    venue: "Northfield, MN"
+    description: "Facilitated a community conversation for hunters and landowners."
+    tags: [public-engagement]
+
+  # ---- EXAMPLE FIELD NOTE ----
+  - date: 2026-05-30
+    type: fieldnote
+    title: "Spring surveillance season in the field"
+    image: assets/fieldnote-1.jpg
+    description: >
+      A few notes from this season's sampling work with our partners. Replace
+      this with your own photo and a sentence or two — these keep the site
+      feeling alive between formal updates.
+    tags: [fieldwork, spring]
