@@ -42,17 +42,12 @@ profile:
 # -----------------------------------------------------------------------------
 about:
   bio: |
-    I am an Assistant Professor of Environmental Studies at Carleton College.
-    My research bridges conservation science and the communities most affected
-    by environmental change. I work alongside Tribal nations, agency partners,
-    and rural communities in the upper Midwest to study chronic wasting disease
-    (CWD) in cervid populations and to build durable, locally grounded responses
-    to it.
+ I am an Assistant Professor of Environmental Studies at Carleton College and an enrolled member of the Winnebago Tribe of Nebraska. My research examines how people, communities, and institutions engage with conservation and natural resource management. I am particularly interested in the social dimensions of conservation, Indigenous environmental stewardship, and community-engaged approaches to addressing environmental challenges.
 
-    I am committed to community-based participatory research (CBPR): designing
-    studies with — not merely about — the people and nations who hold a stake in
-    the outcomes. I teach courses in conservation science, environmental justice,
-    and field methods.
+Much of my current work has focused on chronic wasting disease (CWD) in the Upper Midwest, where I have worked alongside Tribal Nations, agency partners, and local communities to better understand the impacts of wildlife disease and to develop locally grounded management strategies. My research draws heavily on social science methods and community-based participatory research (CBPR), with an emphasis on building partnerships and conducting research that benefits the communities involved.
+
+At Carleton, I teach courses on Tribal sovereignty and sustainability, community engagement and qualitative methods, and Indigenous relationships with land and environmental change. Across my research and teaching, I seek to connect conservation science with the experiences, values, and knowledge of the people most affected by environmental decisions.
+
   education:
     - { degree: "Ph.D., Conservation Sciences", institution: "University of Minnesota, Twin Cities", year: "2025", detail: "Dissertation: Empowering Tribal Communities to Advance Natural Resource Management and Outreach Through Collaborative Approaches" }
     - { degree: "M.S., Conservation Sciences", institution: "University of Minnesota, Twin Cities", year: "2022" }
