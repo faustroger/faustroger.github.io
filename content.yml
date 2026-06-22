@@ -91,15 +91,45 @@ research:
 # -----------------------------------------------------------------------------
 teaching:
   intro: >
-    I teach courses on Tribal sovereignty and sustainability, community
+    I teach courses in Environmental Studies on Tribal sovereignty and sustainability, community
     engagement and qualitative methods, and Indigenous relationships with land
     and environmental change, connecting conservation science with the
     knowledge and values of the communities most affected by environmental
     decisions.
   courses:
-    - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Tribal sovereignty and its connections to environmental sustainability and natural resource management." }
-    - { term: "Winter 2027", code: "ENTS 180", title: "Community Engagement and Qualitative Methods", description: "Foundations of community-engaged research and qualitative methods in environmental studies." }
-    - { term: "Spring 2027", code: "ENTS 320", title: "Seminar: Listening to the Land", description: "Seminar on Indigenous relationships with land and environmental change." }
+    - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Explores the legal, cultural, and environmental foundations of Tribal
+        and Indigenous environmental stewardship and natural resource
+        management. Students examine the historical significance of treaties,
+        Tribal sovereignty, and federal trust responsibility, alongside the key
+        laws that have shaped Tribal resource use. Through case studies, the
+        course analyzes the evolution of Tribal co-management with federal and
+        state agencies, highlighting both challenges and successful
+        partnerships. Traditional ecological knowledge (TEK) and Indigenous
+        worldviews on land stewardship complement critical discussions of
+        climate change, environmental justice, and the balance between economic
+        development and ecological sustainability in Tribal resource use." }
+    - { term: "Winter 2027", code: "ENTS 180", title: "Community Engagement and Qualitative Methods", description: "Introduces community-engaged research and qualitative methods in
+        environmental and social contexts. Students examine principles of
+        working with communities, ethical research practices, and the role of
+        power, positionality, and cultural humility. Through exercises,
+        workshops, and group projects, students learn to collect, code, and
+        analyze qualitative data from interviews, focus groups, and
+        observations, with an emphasis on reflective practice and translating
+        findings into actionable outputs. By term's end, students can plan
+        community-based research projects, critically evaluate existing studies,
+        and understand the challenges and opportunities of ethical qualitative
+        research." }
+    - { term: "Spring 2027", code: "ENTS 320", title: "Seminar: Listening to the Land", description: "For many Indigenous peoples, land is a relative, a teacher, and a source
+        of knowledge. This seminar examines Indigenous relationships with land
+        through the writings of Native authors, scholars, and activists,
+        exploring traditional ecological knowledge, stewardship, and
+        environmental challenges. We consider how Indigenous knowledge informs
+        responses to climate change, land use, and biodiversity loss, while
+        recognizing land and non-human beings as active participants in cultural
+        and ecological systems. In a reading-group format, discussions foster
+        critical reflection and connections to broader environmental issues, and
+        students complete an independent research paper applying course themes to
+        a focused topic." }
     
 
 # -----------------------------------------------------------------------------
