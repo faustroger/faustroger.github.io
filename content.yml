@@ -180,7 +180,7 @@ contact:
 entries:
 
   # ----  PUBLICATIONS ----
-- date: 2025-01-01
+  - date: 2025-01-01
     type: publication
     title: "Application of Self-Determination Theory to Wildlife Disease Risk Communication"
     venue: "Society & Natural Resources, 2025"
