@@ -99,8 +99,8 @@ teaching:
     critical discussion.
     
   photos:
-    - { src: "Class_Prairie.jpg", caption: "Learning about fire ecology and prairie management through a prescribed burn at the Carleton Arboretum." }
-    - { src: "Fire_Class.png", caption: "Learning beyond the classroom: students examining local approaches to caring for and sustaining natural environments at Prairie Creek Wildlife Management Area." }
+    - { src: "Class_Prairie.jpg", caption: "Learning beyond the classroom: students examining local approaches to caring for and sustaining natural environments at Prairie Creek Wildlife Management Area." }
+    - { src: "Fire_Class.png", caption: "Learning about fire ecology and prairie management through a prescribed burn at the Carleton Arboretum." }
     
   courses:
     - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Explores the legal, cultural, and environmental foundations of Tribal
