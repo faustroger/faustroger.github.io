@@ -179,31 +179,42 @@ contact:
 
 entries:
 
-  # ---- EXAMPLE PUBLICATIONS ----
-  - date: 2026-03-15
+  # ----  PUBLICATIONS ----
+- date: 2025-01-01
     type: publication
-    title: "Spatial drivers of chronic wasting disease spread in upper-Midwest white-tailed deer"
-    venue: "Journal of Wildlife Diseases, 62(2), 145–161"
-    description: "Combined surveillance data and spatial modeling to identify landscape predictors of CWD emergence."
+    title: "Application of Self-Determination Theory to Wildlife Disease Risk Communication"
+    venue: "Society & Natural Resources, 2025"
+    description: "Applies self-determination theory to improve wildlife disease risk communication strategies."
     links:
-      - { text: "DOI", url: "https://doi.org/10.0000/example" }
-    tags: [CWD, spatial-ecology, surveillance]
-
-  - date: 2025-09-02
+      - { text: "DOI", url: "https://doi.org/10.1080/08941920.2024.2411693" }
+      - { text: "Web of Science", url: "https://www.webofscience.com/wos/woscc/full-record/WOS:001329474500001" }
+    tags: [CWD, risk-communication, behavior-change]
+  - date: 2025-01-01
     type: publication
-    title: "Co-governing wildlife health: a participatory framework for CWD response with Tribal nations"
-    venue: "Conservation Biology, 39(4), e14123"
-    description: "Presents a CBPR framework co-developed with Tribal partners for data governance and decision-making."
+    title: "Let Nature Take Its Course: Attitudes and Knowledge of Chronic Wasting Disease Among Southeastern Minnesota Amish Deer Hunters"
+    venue: "Society & Natural Resources, 2025"
+    description: "Examines attitudes, knowledge, and beliefs about chronic wasting disease among Amish deer hunters in southeastern Minnesota."
     links:
-      - { text: "DOI", url: "https://doi.org/10.0000/example2" }
-      - { text: "PDF", url: "assets/faust-2025-cogoverning.pdf" }
-    tags: [CBPR, Indigenous-engagement, co-management]
-
-  - date: 2024-06-20
+      - { text: "DOI", url: "https://doi.org/10.1080/08941920.2025.2496897" }
+      - { text: "Web of Science", url: "https://www.webofscience.com/wos/woscc/full-record/WOS:001480331000001" }
+    tags: [CWD, Amish, wildlife-hunting, community-attitudes]
+  - date: 2025-12-01
     type: publication
-    title: "What rural communities want from disease surveillance: lessons from the upper Midwest"
-    venue: "Society & Natural Resources, 37(6), 800–818"
-    tags: [community-engagement, surveillance]
+    title: "A Community-Based Research Approach to Develop Chronic Wasting Disease Outreach with Tribal Communities"
+    venue: "Society & Natural Resources, 2025"
+    description: "Community-based research partnership with Tribal communities to develop culturally-tailored CWD outreach and engagement strategies."
+    links:
+      - { text: "DOI", url: "https://doi.org/10.1080/08941920.2025.2572062" }
+    tags: [CWD, CBPR, Tribal-engagement, co-management, outreach]
+  - date: 2024-01-01
+    type: publication
+    title: "The role of behavior accessibility and individual risk perceptions in chronic wasting disease risk mitigation behaviors among Minnesota deer hunters"
+    venue: "Human Dimensions of Wildlife, 2024"
+    description: "Investigates how behavior accessibility and individual risk perceptions influence adoption of CWD risk mitigation practices among Minnesota deer hunters."
+    links:
+      - { text: "DOI", url: "https://doi.org/10.1080/10871209.2023.2220353" }
+      - { text: "Web of Science", url: "https://www.webofscience.com/wos/woscc/full-record/WOS:001000613700001" }
+    tags: [CWD, behavior-change, risk-perception, wildlife-hunters]
 
   # ---- EXAMPLE TALKS ----
   - date: 2026-04-10
