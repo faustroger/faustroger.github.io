@@ -156,14 +156,12 @@ contact:
   intro: >
     I welcome inquiries from prospective collaborators, community partners, and
     students.
-  email: rfaust@carleton.edu
-  office: |
-    Department of Environmental Studies
-    Carleton College
-    Northfield, MN
+  email: faust@carleton.edu
+ 
   links:
-    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
-    - { label: "ORCID",          url: "https://orcid.org/0000-0000-0000-0000" }
+    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=lkiSCEIAAAAJ&hl=en" }
+    - { label: "ORCID",          url: "https://orcid.org/my-orcid?orcid=0009-0004-6779-3313" }
+    - { label: "LinkedIn",          url: "https://www.linkedin.com/in/roger-faust/" }
 
 
 # =============================================================================
