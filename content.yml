@@ -56,12 +56,12 @@ about:
     the outcomes. I teach courses in conservation science, environmental justice,
     and field methods.
   education:
-    - { degree: "Ph.D., Environmental Science / Wildlife Ecology", institution: "University Name", year: "2019", detail: "Dissertation on disease ecology in cervid populations." }
-    - { degree: "M.S., Natural Resources", institution: "University Name", year: "2014" }
-    - { degree: "B.A., Biology", institution: "College Name", year: "2011" }
+    - { degree: "Ph.D., Conservation Sciences", institution: "University of Minnesota, Twin Cities", year: "2025", detail: "Dissertation: Empowering Tribal Communities to Advance Natural Resource Management and Outreach Through Collaborative Approaches" }
+    - { degree: "M.S., Conservation Sciences", institution: "University of Minnesota, Twin Cities", year: "2022" }
+    - { degree: "B.A., Biology", institution: "Carleton College", year: "2019" }
   positions:
-    - { role: "Assistant Professor of Environmental Studies", institution: "Carleton College", years: "2022–present" }
-    - { role: "Postdoctoral Research Associate", institution: "University Name", years: "2019–2022" }
+    - { role: "Assistant Professor of Environmental Studies", institution: "Carleton College", years: "2026–present" }
+    - { role: "Postdoctoral Fellow of Environmental Studies", institution: "Carleton College", years: "2024–2026" }
 
 # -----------------------------------------------------------------------------
 # RESEARCH
