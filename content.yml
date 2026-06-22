@@ -91,12 +91,16 @@ research:
 # -----------------------------------------------------------------------------
 teaching:
   intro: >
-    I teach across conservation science, environmental justice, and field
-    methods, emphasizing hands-on fieldwork and community-engaged projects.
+    I teach courses on Tribal sovereignty and sustainability, community
+    engagement and qualitative methods, and Indigenous relationships with land
+    and environmental change, connecting conservation science with the
+    knowledge and values of the communities most affected by environmental
+    decisions.
   courses:
-    - { term: "Fall 2026",   code: "ENTS 215", title: "Conservation Science",            description: "Principles of conservation biology with regional case studies." }
-    - { term: "Winter 2026", code: "ENTS 268", title: "Community-Based Environmental Research", description: "Theory and practice of participatory and Indigenous-led research." }
-    - { term: "Spring 2026", code: "ENTS 340", title: "Field Methods in Wildlife Ecology", description: "Survey design, sampling, and disease surveillance in the field." }
+    - { term: "Fall 2026",   code: "ENTS 220", title: "Sovereignty and Sustainability", description: "Tribal sovereignty and its connections to environmental sustainability and natural resource management." }
+    - { term: "Winter 2027", code: "ENTS 180", title: "Community Engagement and Qualitative Methods", description: "Foundations of community-engaged research and qualitative methods in environmental studies." }
+    - { term: "Spring 2027", code: "ENTS 320", title: "Seminar: Listening to the Land", description: "Seminar on Indigenous relationships with land and environmental change." }
+    
 
 # -----------------------------------------------------------------------------
 # OUTREACH (intro text only; individual events are ENTRIES below)
