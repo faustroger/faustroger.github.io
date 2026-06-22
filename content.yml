@@ -35,8 +35,8 @@ profile:
     management, with a focus on chronic wasting disease in the upper Midwest.
   links:
     - { label: "Email",          url: "mailto:faust@carleton.edu" }
-    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
-    - { label: "ORCID",          url: "https://orcid.org/0000-0000-0000-0000" }
+    - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=lkiSCEIAAAAJ&hl=en&oi=ao" }
+    - { label: "ORCID",          url: "https://orcid.org/0009-0004-6779-3313" }
     - { label: "CV (PDF)",       url: "assets/Faust_CV.pdf" }
 
 # -----------------------------------------------------------------------------
